@@ -20,14 +20,14 @@ public class Main {
             scan.nextLine();
             switch (opcio) {
                 case 1:
-                    System.out.println("intro: ");
+                    System.out.println("introdueix el primer numero: ");
                     int num1 = scan.nextInt();
-                    System.out.println("intro: ");
+                    System.out.println("introdueix el segon numero: ");
                     int num2 = scan.nextInt();
                     if (max(num1,num2)) {
-                        System.out.println("aaa");
+                        System.out.printf("%d es mes gran que %d", num1, num2);
                     }
-                    else System.out.println("bbb");
+                    else System.out.printf("%d es mes gran que %d", num2, num1);
                     break;
                 case 2:
                     double a=2;
