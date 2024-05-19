@@ -20,11 +20,14 @@ public class Main {
             scan.nextLine();
             switch (opcio) {
                 case 1:
+                    //Canviem "Intro" per "Introdueix el primer numero:" que es un missatge més descriptiu
                     System.out.println("introdueix el primer numero: ");
                     int num1 = scan.nextInt();
                     System.out.println("introdueix el segon numero: ");
                     int num2 = scan.nextInt();
                     if (max(num1,num2)) {
+                        //Aqui fem el mateix
+                        //aaa/bbb -> %d es mes gran que %d", num1, num2
                         System.out.printf("%d es mes gran que %d", num1, num2);
                     }
                     else System.out.printf("%d es mes gran que %d", num2, num1);
@@ -37,7 +40,8 @@ public class Main {
                     break;
                 case 3:
                     List<OrderLineItem> lineItems = null;
-                    Order asd = new Order(lineItems, 5.5);
+                    //asd -> varOrdenar
+                    Order varOrdenar = new Order(lineItems, 5.5);
                     break;
                 case 0:
                     break;
